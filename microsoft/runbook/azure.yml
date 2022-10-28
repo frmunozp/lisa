@@ -3,17 +3,17 @@ include:
   - path: ./tiers/tier.yml
 variable:
   - name: location
-    value: "westus2"
+    value: "centraluseuap"
   - name: keep_environment
     value: "no"
   - name: resource_group_name
     value: ""
   - name: marketplace_image
-    value: ""
+    value: "canonical 0001-com-ubuntu-server-focal 20_04-lts-gen2 20.04.202102010"
   - name: vhd
     value: ""
   - name: vm_size
-    value: ""
+    value: "Standard_D96_v5"
   - name: deploy
     value: true
   - name: wait_delete
@@ -48,3 +48,11 @@ platform:
         vhd: $(vhd)
         location: $(location)
         vm_size: $(vm_size)
+testcase:
+  - criteria:
+      name: verify_resource_disk_io
+    select_action: include
+testcase:
+  - criteria:
+      name: verify_resource_disk_io
+    select_action: include
