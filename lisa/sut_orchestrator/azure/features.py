@@ -1577,6 +1577,7 @@ class NestedVirtualization(AzureFeatureMixin, features.NestedVirtualization):
             "standardDv3Family",
             "standardDSv3Family",
             "standardDv4Family",
+            "standardDv5Family",
             "standardDSv4Family",
             "standardDDv4Family",
             "standardDDSv4Family",
