@@ -9,11 +9,11 @@ variable:
   - name: resource_group_name
     value: ""
   - name: marketplace_image
-    value: ""
+    value: "microsoftcblmariner cbl-mariner cbl-mariner-2 2.20231106.01"
   - name: vhd
     value: ""
   - name: vm_size
-    value: ""
+    value: "Standard_DS4_v2"
   - name: deploy
     value: true
   - name: wait_delete
@@ -21,7 +21,7 @@ variable:
   - name: concurrency
     value: 5
   - name: admin_private_key_file
-    value: ""
+    value: "C:\\Users\\frmunozp\\.ssh\\id_rsa"
     is_secret: true
   - name: admin_password
     value: ""

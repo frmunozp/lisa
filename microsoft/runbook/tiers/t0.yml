@@ -1,4 +1,5 @@
 testcase:
   - criteria:
-      priority: 0
+      name: verify_sriov_ethtool_offload_setting
+    select_action: include
     enabled: $(enable_tests)
